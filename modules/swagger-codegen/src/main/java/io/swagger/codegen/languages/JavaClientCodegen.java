@@ -45,6 +45,7 @@ public class JavaClientCodegen extends AbstractJavaCodegen
 
     public JavaClientCodegen() {
         super();
+        supportsInheritance = true;
         outputFolder = "generated-code" + File.separator + "java";
         embeddedTemplateDir = templateDir = "Java";
         invokerPackage = "io.swagger.client";
